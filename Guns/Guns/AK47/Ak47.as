@@ -1,8 +1,8 @@
 #include "StandardFire.as";
 
-const uint8 FIRE_INTERVAL = 10; //Used 
-const uint8 CLIP        = 255; //Used
-const uint8 TOTAL       = 255; //Used
+const uint8 FIRE_INTERVAL = 1; //Used 
+const uint8 CLIP        = 500; //Used
+const uint8 TOTAL       = 500; //Used
 const uint8 RELOAD_TIME = 30; //Used, reload timer (in ticks)
 const uint8 BUL_PER_SHOT= 1; //Shots per bullet | CHANGE B_SPREAD, otherwise both bullets will come out together
 
