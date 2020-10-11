@@ -69,7 +69,7 @@ void ManageGrapple(CBlob@ this, ArcherInfo@ archer)
 	Vec2f pos = this.getPosition();
 
 	const bool right_click = this.isKeyJustPressed(key_action2);
-	if (right_click)
+	if (false)
 	{
 		// cancel charging
 		if (charge_state != ArcherParams::not_aiming)
@@ -404,7 +404,7 @@ void ManageBow(CBlob@ this, ArcherInfo@ archer, RunnerMoveVars@ moveVars)
 
 				if (ismyplayer && !this.wasKeyPressed(key_action1))   // playing annoying no ammo sound
 				{
-					this.getSprite().PlaySound("Entities/Characters/Sounds/NoAmmo.ogg", 0.5);
+					//this.getSprite().PlaySound("Entities/Characters/Sounds/NoAmmo.ogg", 0.5);
 				}
 
 			}

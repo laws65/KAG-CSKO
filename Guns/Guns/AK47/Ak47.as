@@ -1,8 +1,8 @@
 #include "StandardFire.as";
 
-const uint8 FIRE_INTERVAL = 1; //Used 
-const uint8 CLIP        = 500; //Used
-const uint8 TOTAL       = 500; //Used
+const uint8 FIRE_INTERVAL = 2; //Used 
+const uint8 CLIP        = 30; //Used
+const uint8 TOTAL       = 90; //Spare ammo
 const uint8 RELOAD_TIME = 30; //Used, reload timer (in ticks)
 const uint8 BUL_PER_SHOT= 1; //Shots per bullet | CHANGE B_SPREAD, otherwise both bullets will come out together
 
@@ -17,11 +17,11 @@ const int8  B_TTL    = 120; //TTL = Time To Live, bullets will live for 120 tick
 const float B_DAMAGE = 1; //1 heart
 const Vec2f B_KB     = Vec2f(0,0); //KnockBack velocity on hit
 const int   B_F_COINS= 2; //Coins on hitting flesh (player or other blobs with 'flesh')
-const int   B_O_COINS= 1; //Coins on hitting objects (like tanks, boulders etc)
+const int   B_O_COINS= 0; //Coins on hitting objects (like tanks, boulders etc)
 const int   T_TO_DIE = 150; //how many seconds before gun disspears if it hasnt been picked up
 const string C_TAG   = "autoRifle"; //Custom TAG, can be used later on ingame for certain ammos etc
 const bool  S_LAST_B = false; //Should we spread from the last bullet shot(true) or from the mouse pos(false), only matters for shotguns
-const s16   G_RECOIL = -10; //0 is default, adds recoil aiming up
+const s16   G_RECOIL = -20; //0 is default, adds recoil aiming up
 const bool  G_RANDOMX= true;//Should we randomly move x
 const bool  G_RANDOMY= false;//Should we randomly move y, it ignores g_recoil
 const int   G_RECOILT= 10; //How long should recoil last, 10 is default, 30 = 1 second (like ticks)
