@@ -35,7 +35,7 @@ void onInit(CBlob@ this)
 	//no spinning
 	this.getShape().SetRotationsAllowed(false);
 	this.getSprite().SetEmitSound("Entities/Characters/Archer/BowPull.ogg");
-	this.addCommandID("shoot arrow");
+	//this.addCommandID("shoot arrow");
 	this.addCommandID("pickup arrow");
 	this.getShape().getConsts().net_threshold_multiplier = 0.5f;
 
